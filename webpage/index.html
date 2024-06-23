@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: hsl(192, 100%, 9%);
+            background-color: hsl(207, 100%, 98%);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            background-color: hsl(207, 100%, 98%);
+        }
+        
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: hsl(192, 100%, 9%);
+        }
+        
+        .btn {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        .try-free {
+            color: hsl(322, 100%, 66%);
+            background: none;
+            border: 2px solid hsl(322, 100%, 66%);
+        }
+        
+        .primary {
+            background-color: hsl(322, 100%, 66%);
+            color: white;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background-color: hsl(207, 100%, 98%);
+        }
+        
+        .hero h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        
+        .hero .illustration {
+            margin-top: 40px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            background-color: hsl(207, 100%, 98%);
+            padding: 40px 0;
+        }
+        
+        .stat {
+            text-align: center;
+            margin: 0 20px;
+        }
+        
+        .stat h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .stat p {
+            font-size: 1rem;
+            color: hsl(192, 100%, 9%);
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 60px 0;
+            background-color: hsl(207, 100%, 98%);
+        }
+        
+        .feature {
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+        
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 60px 0;
+            background-color: hsl(192, 100%, 9%);
+            color: white;
+        }
+        
+        .cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: hsl(192, 100%, 9%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .footer-left,
+        .footer-right {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+        }
+        
+        .footer-left .contact-info {
+            margin: 20px 0;
+        }
+        
+        .footer-left .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .footer-left .social-icons {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .footer-left .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-right form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-right input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        
+        .footer-right .btn {
+            align-self: flex-start;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Huddle</h1>
+            <button class="btn try-free">Try It Free</button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Build The Community Your Fans Will Love</h2>
+            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+            <button class="btn primary">Get Started For Free</button>
+            <div class="illustration">
+                <img src="images/illustration-mockups.svg" alt="Illustration Mockups">
+            </div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="container">
+            <div class="stat">
+                <h3>1.4k+</h3>
+                <p>Communities Formed</p>
+            </div>
+            <div class="stat">
+                <h3>2.7m+</h3>
+                <p>Messages Sent</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="images/illustration-grow-together.svg" alt="Grow Together">
+                <h3>Grow Together</h3>
+                <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out with a feedback form.</p>
+            </div>
+            <div class="feature">
+                <img src="images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+                <h3>Flowing Conversations</h3>
+                <p>You wouldn’t paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+            </div>
+            <div class="feature">
+                <img src="images/illustration-your-users.svg" alt="Your Users">
+                <h3>Your Users</h3>
+                <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <h2>Ready To Build Your Community?</h2>
+            <button class="btn primary">Get Started For Free</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <h2 class="logo">Huddle</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +1-543-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> example@huddle.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Newsletter</h3>
+                <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address.</p>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
